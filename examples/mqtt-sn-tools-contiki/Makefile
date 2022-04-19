@@ -1,4 +1,4 @@
-all: udp-client-rpl-localization example
+all: mqtt-example
 #all: example
 
 WITH_UIP6=1
