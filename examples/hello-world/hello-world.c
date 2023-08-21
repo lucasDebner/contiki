@@ -46,10 +46,14 @@ AUTOSTART_PROCESSES(&hello_world_process);
 /*---------------------------------------------------------------------------*/
 PROCESS_THREAD(hello_world_process, ev, data)
 {
-  PROCESS_BEGIN();
+   static uint8_t teste = 0;
+   PROCESS_BEGIN();
 
-  printf("Hello, world\n");
-  
+   printf("Hello, world\n");
+   teste = 2;
+   if(teste=2){
+      teste = 3;
+  }else teste = 4;
   PROCESS_END();
 }
 /*---------------------------------------------------------------------------*/
